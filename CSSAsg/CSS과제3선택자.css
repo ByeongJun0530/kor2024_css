@@ -1,0 +1,66 @@
+html{
+    background-color: white;
+}
+
+body{
+    border: 5px solid white;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(228, 170, 200);
+}
+
+.title{
+    font-size: 12px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 1px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.photo{
+    width: 230px;
+    height: 200px;
+    margin-left: 70px;
+}
+
+.content{
+    font-size: 8px;
+    text-align: center;
+}
+
+.select1{
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 80px;  
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.select2{
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-left: 80px;  
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    padding: 10px;
+} 
+
+.select3{
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin-left: 80px;   
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}

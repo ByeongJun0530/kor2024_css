@@ -1,0 +1,37 @@
+#title{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px grey;
+    width: 40%;
+}
+
+#date{
+    margin-right: 20px;
+    text-align: right;
+    font-size: 5px;
+    color: grey;
+    width: 37%;
+}
+
+#content1{
+    text-align: center;
+    font-size: 10px;
+    width: 40%;
+}
+
+#content2{
+    text-align: center;
+    font-size: 10px;
+    width: 40%;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+#etc{
+    font-size: 5px;
+    color: green;
+    text-align: left;
+}

@@ -1,0 +1,81 @@
+/*전체부분*/
+*{ 
+    /*border: 1px solid red;*/
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+li{list-style-type: none;}
+a{text-decoration: none; color: black;}
+/*헤더구역*/
+#header{
+    width: 1280px; margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*헤더 우측*/
+#upperMenu{
+    font-size: 10px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+#upperMenu>li{margin-left: 20px;}
+#lowerMenu{
+    word-spacing: 50px;
+    font-weight: bold;
+    margin : 30px 0px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+#lowerMenu>li{margin-left: 50px;}
+/*메인사진*/
+#mainPhoto{
+    width: 100%;
+}
+/*본문구역*/
+#main{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/*사이드바*/
+#sideBar{
+    width: 300px;
+    border-bottom: 1px solid gray;
+}
+#sideBar>ul>li{
+    border-bottom: 1px solid rgb(172, 169, 169);
+    padding: 10px;
+}
+#sideHead{
+    padding: 10px;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+}
+/*본문*/
+#content{
+    margin: 15px;
+    width: 950px;
+}
+#contentHead{
+    border-bottom: 1px solid gray;
+}
+#contentImg{
+    display: block;
+    margin: 0 auto;
+}
+/*푸터*/
+#footer{
+    background-color: #2c2a29;
+}
+#footerMain{
+    color: white;
+    width: 1280px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
