@@ -94,9 +94,7 @@ for(let index = 0; index < numArray.length - 1; index++){
     let num = numArray[index]
     numHTML += `<tr><td> ${(index + 1) + '번째 :'} </td><td> ${num} </td>`  
 }
-
 numHTML += `</tr>` 
-
 numHTML += `</table>`
 console.log(numHTML)
 // html 변수값 출력 
