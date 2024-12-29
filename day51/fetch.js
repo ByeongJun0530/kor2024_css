@@ -60,3 +60,41 @@ fetch('https://jsonplaceholder.typicode.com/posts/1', option3)
     .then(d => {console.log(d)}) // { }
     .catch(e => {console.log(e)})
     
+// 실습1 : fetch 함수를 이용하여 GET 방식으로 요청하여 응답을 CONSOLE에 출력하시오.
+// 요청 URL : 'https://reqres.in/api/users/2'
+fetch('https://reqres.in/api/users/2' , {method : 'GET'})
+    .then(r => r.json())
+    .then(d => console.log(d))
+    .catch(e => console.log(e))
+// 실습2 : fetch 함수를 이용하여 POST 방식으로 요청하여 응답을 CONSOLE에 출력하시오.
+// 요청 URL : 'https://reqres.in/api/users'
+const info = { "name" : "morpheus", "job" : "leader"}
+const postOption = {
+    method : 'POST',
+    headers : {'Content-Type' : 'application/json'},
+    body : JSON.stringify(info)
+}
+fetch('https://reqres.in/api/users', postOption)
+    .then(r => r.json())
+    .then(d => console.log(d))
+    .catch(e => console.log(e))
+// 실습3 : fetch 함수를 이용하여 PUT 방식으로 요청하여 응답을 CONSOLE에 출력하시오.
+// 요청 URL : 'https://reqres.in/api/users/2'
+const updateInfo = { "name" : "morpheus", "job" : "zion resident"}
+const upOption = {
+    method : 'PUT',
+    headers : {'Content-Type' : 'application/json'},
+    body : JSON.stringify(updateInfo)
+}
+fetch('https://reqres.in/api/users/2', upOption)
+    .then(r => r.json())
+    .then(d => console.log(d))
+    .catch(e => console.log(e))
+// 실습4 : fetch 함수를 이용하여 DELETE 방식으로 요청하여 응답을 CONSOLE에 출력하시오.
+// 요청 URL : 'https://reqres.in/api/users/2'
+fetch('https://reqres.in/api/users/2', {method : 'DELETE'})
+    //.then(r => r.json()) // SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input at fetch.js:96:18
+    .then(d => console.log(d))
+    .catch(e => console.log(e))
+
+
